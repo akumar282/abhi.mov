@@ -4,11 +4,15 @@ import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
 import tseslint from 'typescript-eslint'
 import { globalIgnores } from 'eslint/config'
+import stylistic from '@stylistic/eslint-plugin'
 
 export default tseslint.config([
   globalIgnores(['dist']),
   {
     files: ['**/*.{ts,tsx}'],
+    plugins: {
+      '@stylistic': stylistic,
+    },
     extends: [
       js.configs.recommended,
       tseslint.configs.recommended,
@@ -21,6 +25,7 @@ export default tseslint.config([
     },
     rules: {
       quotes: ['error', 'single', { avoidEscape: true }],
+      '@stylistic/jsx-quotes': ['error', 'prefer-single'],
       semi: ['error', 'never'],
     }
   },
