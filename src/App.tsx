@@ -1,13 +1,9 @@
-import waves from './assets/waves.png'
+import { HomeComponent } from './components/HomeComponent.tsx'
 
 function App() {
 
   return (
-    <div className='w-screen h-screen bg-violet-950'>
-      <div style={{ backgroundImage: `url(${waves})` }} className='bg-center bg-repeat h-screen w-full"'>
-
-      </div>
-    </div>
+    <HomeComponent/>
   )
 }
 
