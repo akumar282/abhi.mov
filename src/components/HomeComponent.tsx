@@ -16,6 +16,7 @@ import github from '../assets/github.svg'
 import gitmatch from '../assets/gitmatch.png'
 import pglang from '../assets/pglang.png'
 import resume from '../assets/resume.svg'
+import down from '../assets/down.png'
 import Typewriter from 'typewriter-effect'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
@@ -24,6 +25,7 @@ import { useEffect } from 'react'
 
 export function HomeComponent() {
 
+  
   useEffect(() => {
     Aos.init({
       duration: 3000,
@@ -48,6 +50,9 @@ export function HomeComponent() {
                   }}
                 />
               </h1>
+            </div>
+            <div className='flex items-center animate-bounce justify-center'>
+              <img className='mx-3 w-15 h-15' src={down}/>
             </div>
           </div>
         </div>
@@ -87,10 +92,10 @@ export function HomeComponent() {
             Experience (places i've worked)
           </h1>
           <div
-            className='h-full rounded-3xl mt-1 w-11/12 bg-clip-padding shadow-lg flex lg:flex-row flex-col items-start justify-center'
+            className='h-full rounded-3xl mt-1 w-11/12 bg-clip-padding flex lg:flex-row flex-col items-start justify-center'
             data-aos='fade-right'
           >
-            <div className='w-full h-full bg-white/40 rounded-3xl flex lg:flex-row md:items-center flex-col items-start justify-center transition ease-in-out hover:-translate-y-2 hover:scale-105'>
+            <div className='w-full h-full bg-white/40 rounded-3xl flex lg:flex-row shadow-lg md:items-center flex-col items-start justify-center transition ease-in-out hover:-translate-y-2 hover:scale-105'>
               <div className='lg:w-4/12 md:w-3/6  h-11/12 m-4 border-white bg-white border-10 rounded-3xl'>
                 <img src={b777x} className='rounded-2xl' alt='Boeing 777X with olympic mountain range background'/>
               </div>
@@ -115,11 +120,11 @@ export function HomeComponent() {
             </div>
           </div>
           <div
-            className='h-full rounded-3xl mt-1 w-11/12 bg-clip-padding shadow-lg flex lg:flex-row flex-col items-start justify-center'
+            className='h-full rounded-3xl mt-1 w-11/12 bg-clip-padding flex lg:flex-row flex-col items-start justify-center'
             data-aos='fade-left'
           >
             <div
-              className='w-full h-full bg-white/40 rounded-3xl flex lg:flex-row md:items-center flex-col items-start justify-center transition ease-in-out hover:-translate-y-2 hover:scale-105'>
+              className='w-full h-full bg-white/40 rounded-3xl flex lg:flex-row md:items-center shadow-lg flex-col items-start justify-center transition ease-in-out hover:-translate-y-2 hover:scale-105'>
               <div className='lg:w-4/12 md:w-3/6  h-11/12 m-4 border-white bg-white border-10 rounded-3xl'>
                 <img src={ninety8point6} className='rounded-2xl'
                      alt='98point6 App'/>
@@ -145,10 +150,10 @@ export function HomeComponent() {
             </div>
           </div>
           <div
-            className='h-full rounded-3xl mt-1 w-11/12 bg-clip-padding shadow-lg flex lg:flex-row flex-col items-start justify-center'
+            className='h-full rounded-3xl mt-1 w-11/12 bg-clip-padding flex lg:flex-row flex-col items-start justify-center'
             data-aos='fade-right'
           >
-            <div className='w-full h-full bg-white/40 rounded-3xl flex lg:flex-row flex-col md:items-center items-start justify-center transition ease-in-out hover:-translate-y-2 hover:scale-105'>
+            <div className='w-full h-full bg-white/40 rounded-3xl flex lg:flex-row shadow-lg flex-col md:items-center items-start justify-center transition ease-in-out hover:-translate-y-2 hover:scale-105'>
               <div className='lg:w-4/12 md:w-3/6  h-11/12 m-4 border-white bg-white border-10 rounded-3xl'>
                 <img src={mcw} className='rounded-2xl' alt='Inception Health Logo'/>
               </div>
@@ -177,6 +182,9 @@ export function HomeComponent() {
         <div className='w-11/12 h-7/12 items-center my-10 flex-col space-y-4 flex' id='Experience Div'>
           <h1 className='text-white mb-8 font-primary text-2xl'>
             Stuff I know how to use (im really good at these things)
+          </h1>
+          <h1 className='text-white mb-8 font-primary text-md'>
+            If something is not listed here, I can learn it pretty fast (im good at learning things and enjoy it)
           </h1>
           <div className='grid lg:grid-cols-4 text-xl md:grid-cols-2 grid-cols-1 gap-6'>
             <div className='flex flex-col space-y-7 justify-center items-center'>
@@ -230,7 +238,7 @@ export function HomeComponent() {
                   The application connects the user with projects submitted by other developers that align with their
                   values and background through our matching algorithm.
                 </h3>
-                <a href='https://github.com/akumar282/Matchbox'
+                <a href='https://github.com/akumar282/Matchbox' target='_blank'
                    className='font-primary text-md text-center flex-col justify-center'>
                   <img className='mx-7 w-12 h-12 mb-3' src={github}/>repo
                 </a>
@@ -248,9 +256,9 @@ export function HomeComponent() {
                 <h3 className='text-md'>
                   As a vinyl collector, I was fueled by hate whenever I missed an exclusive drop. I made this real-time
                   notification service to let me know whenever new vinyls drop based on what I want. Im still working on
-                  this
+                  this.
                 </h3>
-                <a href='https://github.com/akumar282/spin-service'
+                <a href='https://github.com/akumar282/spin-service' target='_blank'
                    className='font-primary text-md text-center flex-col justify-center'>
                   <img className='mx-7 w-12 h-12 mb-3' src={github}/>repo
                 </a>
@@ -267,7 +275,7 @@ export function HomeComponent() {
             Heres my resume...
           </h1>
           <div className='flex flex-row items-center lg:space-x-7'>
-            <a href='https://www.linkedin.com/in/k-abhi/'
+            <a href='https://www.linkedin.com/in/k-abhi/' target='_blank'
                className='font-primary text-md text-center text-white flex-col space-y-2 justify-center'>
               <img className='mx-7 w-12 h-12 font-bold' src={resume}/><h3 className='text-lg'>Resume</h3>
             </a>
@@ -292,11 +300,11 @@ export function HomeComponent() {
             You can also find me here...
           </h1>
           <div className='flex mt-10 mb-10 flex-row items-center lg:space-x-7'>
-            <a href='https://www.linkedin.com/in/k-abhi/'
+            <a href='https://www.linkedin.com/in/k-abhi/' target='_blank'
                className='font-primary text-md text-center flex-col justify-center'>
               <img className='mx-7 w-12 h-12' src={linkedin}/>linkedin
             </a>
-            <a href='https://github.com/akumar282'
+            <a href='https://github.com/akumar282' target='_blank'
                className='font-primary text-md text-center flex-col justify-center'>
               <img className='mx-7 w-12 h-12' src={github}/>github
             </a>
