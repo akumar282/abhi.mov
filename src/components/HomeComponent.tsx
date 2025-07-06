@@ -55,12 +55,14 @@ export function HomeComponent() {
       <div
         className='w-screen flex items-center flex-col text-center text-white font-primary justify-center bg-violet-500'
         id='about-section'>
-        <div className='w-11/12 h-7/12 items-center my-10 flex-col space-y-4 flex' id='Experience Div'>
-          <h1 className='text-white pb-4 font-primary text-3xl'>
+        <div className='h-7/12 items-center my-10 flex-col space-y-5 flex' id='Experience Div'>
+          <h1 className='text-white mx-4 pb-4 font-primary text-3xl'>
             Experience (places i've worked)
           </h1>
           <div
-            className='h-full rounded-3xl w-11/12 bg-white/40 bg-clip-padding shadow-lg flex lg:flex-row flex-col items-start justify-center'>
+            className='h-full rounded-3xl  w-11/12 bg-white/40 transition ease-in-out hover:-translate-y-2
+            hover:scale-105 bg-clip-padding shadow-lg flex lg:flex-row flex-col items-start justify-center'
+          >
             <div className='lg:w-4/12 md:w-3/6  h-11/12 m-4 border-white bg-white border-10 rounded-3xl'>
               <img src={b777x} className='rounded-2xl' alt='Boeing 777X with olympic mountain range background'/>
             </div>
@@ -69,11 +71,12 @@ export function HomeComponent() {
                 <img src={boeing} className='lg:w-3/12 w-7/12' alt='Boeing Logo'/>
               </div>
               {/*<h1 className='text-2xl'>The Boeing Company</h1>*/}
-              <h3 className='m-3'>
-              As a software engineer, I worked on the Common Core System in the Integrated Modular Avionics team.
+              <h3 className='m-3 lg:mr-5'>
+                As a software engineer, I worked in the Integrated Modular Avionics team on the Common Core System,
+                which is the brains of the airplane.
                 I helped to design and develop tools to aid in the process of DO-178 and DO-330 software certification
                 of the 777X and
-                787 Dreamliner. I migrated the tech stack to use modern frameworks to ease the maintenance costs and
+                787 Dreamliner. For these tools, I migrated the tech stack to use modern frameworks to ease the maintenance costs and
                 speed up development.
                 Additionally, I automated verification processes of aircraft system configuration files used by the
                 Common Core System
@@ -82,7 +85,9 @@ export function HomeComponent() {
             </div>
           </div>
           <div
-            className='h-full rounded-3xl w-11/12 bg-white/40 bg-clip-padding shadow-lg flex lg:flex-row flex-col items-start justify-center'>
+            className='h-full rounded-3xl mt-1 w-11/12 bg-white/40 transition ease-in-out hover:-translate-y-2
+            hover:scale-105 bg-clip-padding shadow-lg flex lg:flex-row flex-col items-start justify-center'
+          >
             <div className='lg:w-4/12 md:w-3/6  h-11/12 m-4 border-white bg-white border-10 rounded-3xl'>
               <img src={ninety8point6} className='rounded-2xl'
                    alt='98point6 App'/>
@@ -93,20 +98,18 @@ export function HomeComponent() {
                      alt='98point6 Logo'/>
               </div>
               {/*<h1 className='text-2xl'>98point6 Technologies</h1>*/}
-              <h3 className='m-3'>
-                As a software engineer, I worked on the Common Core System in the Integrated Modular Avionics team.
-                I helped to design and develop tools to aid in the process of DO-178 and DO-330 software certification
-                of the 777X and
-                787 Dreamliner. I migrated the tech stack to use modern frameworks to ease the maintenance costs and
-                speed up development.
-                Additionally, I automated verification processes of aircraft system configuration files used by the
-                Common Core System
-                improving efficiency and lowering error rates.
+              <h3 className='m-3 lg:mr-5'>
+                I started out at 98point6 as a backend engineer focused on creating health data integrations in a microservice architecture
+                to support the virtual clinic which served over 35,000 patients a day. We created services to enable features such as in app lab results, outbound health
+                data messaging for health systems, heart health monitoring, and a fully custom patient intake AI bot. I moved to a fullstack role later on where I worked
+                on the clinician console and the app used by patients. I also helped to create custom features for our partner Transcarent who consumed our services.
               </h3>
             </div>
           </div>
           <div
-            className='h-full rounded-3xl w-11/12 bg-white/40 bg-clip-padding shadow-lg flex lg:flex-row flex-col items-start justify-center'>
+            className='h-full rounded-3xl mt-2 w-11/12 bg-white/40 transition ease-in-out hover:-translate-y-2
+            hover:scale-105 bg-clip-padding shadow-lg flex lg:flex-row flex-col items-start justify-center'
+          >
             <div className='lg:w-4/12 md:w-3/6  h-11/12 m-4 border-white bg-white border-10 rounded-3xl'>
               <img src={mcw} className='rounded-2xl' alt='Inception Health Logo'/>
             </div>
@@ -116,15 +119,10 @@ export function HomeComponent() {
                      alt='Inception Health App'/>
               </div>
               {/*<h1 className='text-2xl'>Inception Health</h1>*/}
-              <h3 className='m-3'>
-                As a software engineer, I worked on the Common Core System in the Integrated Modular Avionics team.
-                I helped to design and develop tools to aid in the process of DO-178 and DO-330 software certification
-                of the 777X and
-                787 Dreamliner. I migrated the tech stack to use modern frameworks to ease the maintenance costs and
-                speed up development.
-                Additionally, I automated verification processes of aircraft system configuration files used by the
-                Common Core System
-                improving efficiency and lowering error rates.
+              <h3 className='m-4 lg:mr-5'>
+                After working at Boeing for sometime, I realized I missed working in healthcare so I took a role as a software engineer at Inception Health.
+                I work as fullstack engineer, to create features and support the Froedert & MCW App which provides telehealth care to over 6,000 patients a day.
+                I have worked on the AI bot which is responsible for patient information intake, case prioritization, and visit summaries.
               </h3>
             </div>
           </div>
