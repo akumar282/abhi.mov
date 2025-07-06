@@ -275,7 +275,7 @@ export function HomeComponent() {
             Heres my resume...
           </h1>
           <div className='flex flex-row items-center lg:space-x-7'>
-            <a href='https://www.linkedin.com/in/k-abhi/' target='_blank'
+            <a href='https://drive.google.com/file/d/1_GFYsQ-Fm_MwqjT7Sk__fPG74JJnjHSu/view?usp=sharing' target='_blank'
                className='font-primary text-md text-center text-white flex-col space-y-2 justify-center'>
               <img className='mx-7 w-12 h-12 font-bold' src={resume}/><h3 className='text-lg'>Resume</h3>
             </a>
